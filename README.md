@@ -14,7 +14,7 @@ configurations you are likely to need while connecting to NetBox. `NewNetboxAt` 
 (including port, if you need it), and `NewNetboxWithAPIKey` allows you to specify both a hostname:port and API token.
 ```golang
 import (
-    "github.com/netbox-community/go-netbox/netbox"
+    netbox "github.com/netbox-community/go-netbox/netbox/client"
 )
 ...
     c := netbox.NewNetboxAt("your.netbox.host:8000")
